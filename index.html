@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width-device-width", initial-scale = 1.0>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cheap Supps | Ecommerce Website Design</title>
@@ -16,10 +17,10 @@
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <img src="assets/cheapsuppslogo.png" alt="" width="125px" />
+            <img src="assets/logo1.png" alt="" width="125px" />
           </div>
           <nav>
-            <ul>
+            <ul id = "MenuItems">
               <li><a href="">Home</a></li>
               <li><a href="">Products</a></li>
               <li><a href="">About</a></li>
@@ -28,6 +29,8 @@
             </ul>
           </nav>
           <img src="assets/cart.png" alt="" width="30px" height="30px">
+          <img src="assets/menu.png" class="menu-icon" 
+          onclick="menutoggle()">
         </div>
         <div class="row">
           <div class="col-2">
@@ -41,7 +44,7 @@
             <a href="" class="btn">Explore Now &#8594;</a>
           </div>
           <div class="col-2">
-            <img src="assets/stack1.png" alt="" />
+            <img src="assets/front-page.png" alt="" />
           </div>
         </div>
       </div>
@@ -52,13 +55,13 @@
       <div class="small-container">
       <div class="row">
         <div class="col-3">
-          <img src="assets/category-1.jpg" alt="">
+          <img src="assets/iso.png" alt="">
         </div>
         <div class="col-3">
-          <img src="assets/category-2.jpg" alt="">
+          <img src="assets/mre.png" alt="">
         </div>
         <div class="col-3">
-          <img src="assets/category-3.jpg" alt="">
+          <img src="assets/v1.png" alt="">
         </div>
       </div>
     </div>
@@ -341,7 +344,7 @@
             </div>
           </div>
           <div class="footer-col-2">
-            <img src="assets/cheapsuppslogo.png" alt="">
+            <img src="assets/logo1.png" alt="">
             <p>Our purpose is to save you money, so we can all get gains together</p>
           </div>
           <div class="footer-col-3">
@@ -362,5 +365,22 @@
         <p class="copy-right">Copyright 2022- Derek Pruski</p>
       </div>
     </div>
+
+    <!-----------------------JS for toggle menu-->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight = "200px"
+        }
+        else{
+          MenuItems.style.maxHeight = "0px"
+        }
+      }
+    </script>
   </body>
 </html>

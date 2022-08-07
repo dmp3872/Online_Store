@@ -74,6 +74,18 @@ p{
 .btn:hover{
     background-color: #563434;
 }
+
+.btn-2{
+    text-align: center;
+    display: inline-block;
+    background: darkblue;
+    color: white;
+    padding: 8px 20px;
+    width: 210px;
+    margin: 5px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
 .header{
     background: radial-gradient(#fff,#ffd6d6);
 }
@@ -133,14 +145,23 @@ p{
     font-weight: normal;
 }
 .col-4{
+    text-align: center;
     font-size: 14px;
+    margin: auto;
 }
+
 .rating .fa{
     color: rgb(238, 65, 22);
 }
 
-.col-4 :hover{
-    transform: translateY(-5px);
+.col-4 img:hover{
+    transform: translateY(-10px);
+    transition: ease-in-out 30ms;
+}
+
+.btn-2:hover{
+    background-color: #ff523b;
+    transform: none;
 }
 /*---------offer------------------*/
 .offer{

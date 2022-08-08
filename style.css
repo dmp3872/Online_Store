@@ -172,6 +172,10 @@ p{
 .col-2 .offer-img{
     padding: 50px;
 }
+.col-2 img:hover{
+    transform: translateY(-20px);
+    transition: ease-in-out 30ms;
+}
 small{
     color: blue;
     font-size: 15px;
@@ -284,6 +288,28 @@ li{
     margin-left: 20px;
     display: none;
 }
+
+/*-------------------- all products page ----------------- */
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------media queury for menu-----------------------*/
 
 @media only screen and (max-width:800px) {

@@ -102,6 +102,17 @@ p{
 }
 .col-3 img{
     width: 100%;
+    border-radius: 95%;
+}
+.col-3 img:hover{
+    transform: translateY(-10px);
+    transition: ease-in-out 30ms;
+    background: #ff523b;
+    background-image: url(assets/flex2.png);
+}
+.col-3 h2{
+    padding-top: 10px;
+    text-align: center;
 }
 .small-container{
     max-width: 1080px;
@@ -110,7 +121,7 @@ p{
     padding-right: 25px;
 }
 .col-4{
-    align-items: ce;
+    align-items: center;
     flex-basis: 25%;
     padding: 10px;
     min-width: 100px;

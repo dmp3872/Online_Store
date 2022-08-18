@@ -23,7 +23,9 @@ wght@0,100;0,300;0,700;1,900&display=swap"
     <div class="container">
       <div class="navbar">
         <div class="logo">
-          <img src="assets/logo1.png" alt="" width="125px" />
+          <a href="/index.html"
+            ><img src="assets/logo1.png" alt="" width="125px"
+          /></a>
         </div>
         <nav>
           <ul id="MenuItems">
@@ -34,35 +36,85 @@ wght@0,100;0,300;0,700;1,900&display=swap"
             <li><a href="/account.html">Account</a></li>
           </ul>
         </nav>
-        <img src="assets/cart.png" alt="" width="30px" height="30px" />
+        <a href="/cart.html"
+          ><img src="assets/cart.png" alt="" width="30px" height="30px"
+        /></a>
         <img src="assets/menu.png" class="menu-icon" onclick="menutoggle()" />
       </div>
     </div>
 
-    <!-------------------------------single product detials ---------------------------->
+    <!---------------------------- cart items details---------------------->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quanity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="assets/featured-1.png" alt="" />
+              <div>
+                <p>Sample 1</p>
+                <small>Price: $33.72</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="input" value="1" /></td>
+          <td>$33.72</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="assets/featured-2.png" alt="" />
+              <div>
+                <p>Sample 2</p>
+                <small>Price: $31.99</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="input" value="1" /></td>
+          <td>$31.99</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="assets/featured-3.png" alt="" />
+              <div>
+                <p>Sample 3</p>
+                <small>Price: $56.99</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="input" value="1" /></td>
+          <td>$56.99</td>
+        </tr>
+      </table>
 
-    <div class="small-container single-product">
-      <div class="row">
-        <div class="col-2">
-          <p> <a href="/index.html">Home</a> / About</p>
-          <br>
-          <h1>Why Cheap Supps</h1>
-          <br />
-          <p>
-            I started Cheap Supps to make it easier and faster to find the best products for the best prices.
-            Cheap Supps was just an empty html file until I searched the web for the best discounts on preworkouts,
-            protein powders, and the best overall products. I also wanted to filter out the terible proteins and preworkouts
-            we have seen be sold on Supplement websites. I will continously update this site to bring you the best Products
-            and deals. Thank you for looking into cheap supps and lets get these gains together.
-          </p>
-        </div>
-        <div class="col-2">
-          <img src="assets/front-page.png" alt="">
-        </div>
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$122.70</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$17.30</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$140.00</td>
+          </tr>
+        </table>
       </div>
     </div>
-
-
 
     <!----------------------footer ----------->
     <div class="footer">
@@ -115,26 +167,5 @@ wght@0,100;0,300;0,700;1,900&display=swap"
         }
       }
     </script>
-
-    <!-----------------------------JS for product gallery----------------------------->
-    <script>
-        var ProductImg = document.getElementById("ProductImg");
-        var SmallImg = document.getElementsByClassName("small-img");
-
-        SmallImg[0].onclick = function(){
-            ProductImg.src = SmallImg[0].src;
-        }
-        SmallImg[1].onclick = function(){
-            ProductImg.src = SmallImg[1].src;
-        }
-        SmallImg[2].onclick = function(){
-            ProductImg.src = SmallImg[2].src;
-        }
-        SmallImg[3].onclick = function(){
-            ProductImg.src = SmallImg[3].src;
-        }
-
-    </script>
-
   </body>
 </html>
